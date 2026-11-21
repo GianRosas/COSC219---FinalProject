@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PINVRA - Map</title>
+    <link rel="stylesheet" href="map.css">
+    <script src="map.js" defer></script>
+</head>
+<body>
+
+    <header>
+        <h1>PINVRA</h1>
+        <nav>
+            <a href="index.html">Home</a>
+            <a href="map.html">My Map</a>
+            <a href="places.html">Saved Places</a>
+        </nav>
+    </header>
+
+    <main>
+        <h2>Discover Parks</h2>
+        <p>Search for parks in different cities.</p>
+
+        <input type="text" id="city" value="Kelowna">
+        <button id="searchBtn">Search</button>
+
+        <p id="message"></p>
+
+        <table>
+            <thead>
+                <tr>
+                    <th>Name</th>
+                    <th>Location</th>
+                    <th>Latitude</th>
+                    <th>Longitude</th>
+                </tr>
+            </thead>
+            <tbody id="parks"></tbody>
+        </table>
+    </main>
+
+</body>
+</html>
